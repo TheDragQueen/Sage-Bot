@@ -1,5 +1,8 @@
-export{replyGibs}
+// import Discord from 'bot.js';
 
-function replyGibs(client){
-    message.reply('your mom gay');
-}
+// export{replyGibs}
+
+// function replyGibs(client){
+//     console.log("hi");
+//     message.reply('your mom gay');
+// }

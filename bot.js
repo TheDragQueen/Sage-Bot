@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-import replyGibs from 'responses,js';
+
+import replyGibs from 'commands/responses,js';
 
 client.on('ready', () => {
 
@@ -33,11 +34,11 @@ client.on('message', message => {
  
      }
 
-     else if (message.content === 'test') {
+    //  else if (message.content === 'test') {
 
-        replyGibs(client);
+    //     replyGibs(client);
  
-     }
+    //  }
 
 });
 
