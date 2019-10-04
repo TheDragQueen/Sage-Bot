@@ -1,8 +1,23 @@
-// import Discord from 'bot.js';
+export function determineResponse(message){
+    if (message.toLowerCase().includes("cs")){
+        return  "CS?";
+    }
+    else if (message.toLowerCase().includes("trump")){
+        return  "Orange Man Bad";
+    }
+    else if (message == "!gibs"){
+        return "me my chicken tendies";
 
-// export{replyGibs}
-
-// function replyGibs(client){
-//     console.log("hi");
-//     message.reply('your mom gay');
-// }
+    }
+    else if (message == "!gibs tendies"){
+        return "I sharted and farted everywhere";
+        
+    }
+    else if (message == "!gibs milkies"){
+        return "m-mommy";
+        
+    }
+    else{
+        return null;
+    }
+}

@@ -1,36 +1,17 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+import * as responses from './commands/responses.js';
 
 client.on('ready', () => {
-
     console.log('I am ready!');
-
 });
 
  
-
 client.on('message', message => {
-
-    if (message.content === 'cs?') {
-
-       message.reply('your mom gay');
-
-        }
-    else if (message.content === '!gibs') {
-
-        message.reply('me my chicken tendies');
- 
-        }
-     else if (message.content === '!gibs tendies') {
-
-        message.reply('I sharted and farted everywhere');
- 
-        }
-     else if (message.content === '!gibs milkies') {
-
-        message.reply('m-mommy');
- 
-     }
+    var response = responses.determineResponse(message);
+    if (response != null){
+        message.reply('your mom gay');
+    }
 
 });
 
