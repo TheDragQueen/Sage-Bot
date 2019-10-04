@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const responses = require('./commands/responses.js');
-
+const db = require('./database/db.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
@@ -10,6 +10,10 @@ client.on('ready', () => {
 
  
 client.on('message', message => {
+    if (message.content == "status"){
+        message.reply(db.connect());
+    }
+
     var response = responses.response(message.content);
     if (response != null){
         message.reply(response);
