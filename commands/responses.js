@@ -1,7 +1,7 @@
 module.exports = {
     response: function(message){
         if (message.toLowerCase().includes("cs")){
-            return  "ƇS?";
+            return  "ℂ𝕊?";
         }
         else if (message.toLowerCase().includes("trump")){
             return  "Orange Man Bad";
