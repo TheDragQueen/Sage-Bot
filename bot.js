@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-import * as responses from './commands/responses.js';
+const responses = require('./commands/responses.js');
 
 client.on('ready', () => {
     console.log('I am ready!');
@@ -8,7 +8,7 @@ client.on('ready', () => {
 
  
 client.on('message', message => {
-    var response = responses.determineResponse(message);
+    var response = responses.response(message);
     if (response != null){
         message.reply('your mom gay');
     }
