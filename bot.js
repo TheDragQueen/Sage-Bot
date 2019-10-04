@@ -5,7 +5,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log('I am ready!');
-    client.user.user.setPresence({ status: 'online', game: { name: 'Memelord' } });
+    client.user.setPresence({ status: 'online', game: { name: 'Memelord' } });
 });
 
  
