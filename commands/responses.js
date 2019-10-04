@@ -5,7 +5,7 @@ module.exports = {
         }
         else if (message.toLowerCase().includes("garf")){
             var randomNumber = Math.random();
-            if ((randomNumber % 2) == 1){
+            if (((Math.ceil(randomNumber*10)) % 2) == 1){
                 return "https://www.youtube.com/watch?v=OGbhJjXl9Rk";
             }
             else{
@@ -28,7 +28,7 @@ module.exports = {
             
         }
         else if (message == "status"){
-            return Math.random();
+            return (((Math.ceil(Math.random()*10) % 2)) == 1);
         }
         else{
             return null;
