@@ -10,10 +10,9 @@ client.on('ready', () => {
 
  
 client.on('message', message => {
-    if (message.content == "status"){
-        message.reply(db.connect());
-    }
-
+    // if (message.content == "status"){
+    //     message.reply(db.connect());
+    // }
     var response = responses.response(message.content);
     if (response != null){
         message.reply(response);
