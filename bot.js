@@ -1,8 +1,5 @@
 const Discord = require('discord.js');
-
 const client = new Discord.Client();
-
- 
 
 client.on('ready', () => {
 
@@ -18,7 +15,22 @@ client.on('message', message => {
 
        message.reply('your mom gay');
 
-       }
+        }
+    else if (message.content === '!gibs') {
+
+        message.reply('me my chicken tendies');
+ 
+        }
+     else if (message.content === '!gibs tendies') {
+
+        message.reply('I sharted and farted everywhere');
+ 
+        }
+     else if (message.content === '!gibs milkies') {
+
+        message.reply('m-mommy');
+ 
+     }
 
 });
 
