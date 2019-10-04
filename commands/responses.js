@@ -3,6 +3,9 @@ module.exports = {
         if (message.toLowerCase().includes("cs")){
             return  "ℂ𝕊?";
         }
+        if (message.toLowerCase().includes("garf")){
+            return "https://www.youtube.com/watch?v=OGbhJjXl9Rk";
+        }
         else if (message.toLowerCase().includes("trump")){
             return  "Orange Man Bad";
         }
