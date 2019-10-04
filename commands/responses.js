@@ -1,6 +1,6 @@
 module.exports = {
     response: function(message){
-        if (message.toLowerCase().includes("cs")){
+        if (message.includes("cs")){
             return  "CS?";
         }
         else if (message.toLowerCase().includes("trump")){
