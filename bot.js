@@ -5,7 +5,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log('I am ready!');
-    client.user.setActivity('Garf', { type: 'Playing' });
+    client.user.setPresence({ game: { name: 'nameGoesHere', type: 0 } });
 });
 
  
