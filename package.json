@@ -1,10 +1,10 @@
 {
 
-    "name": "Example",
+    "name": "amadeusdiscord",
   
-    "description": "Example",
+    "description": "I am a funny meme",
   
-    "version": "0.0.0",
+    "version": "0.0.1",
   
     "main": "bot.js",
   
@@ -18,7 +18,9 @@
   
       "discord.js": "11.1.0",
   
-      "request": "2.81.0"
+      "request": "2.81.0",
+      
+      "mysql": ">=2.5.0"
   
     }
   
