@@ -5,7 +5,7 @@ module.exports = {
         }
         else if (message.toLowerCase().includes("garf")){
             var randomNumber = Math.random();
-            if ((randomNumber % 2) == 0){
+            if ((randomNumber % 2) == 1){
                 return "https://www.youtube.com/watch?v=OGbhJjXl9Rk";
             }
             return "https://www.youtube.com/watch?v=agPj0S4weDo";
