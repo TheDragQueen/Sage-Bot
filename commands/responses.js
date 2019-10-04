@@ -8,7 +8,9 @@ module.exports = {
             if ((randomNumber % 2) == 1){
                 return "https://www.youtube.com/watch?v=OGbhJjXl9Rk";
             }
-            return "https://www.youtube.com/watch?v=agPj0S4weDo";
+            else{
+                return "https://www.youtube.com/watch?v=agPj0S4weDo";
+            }
         }
         else if (message.toLowerCase().includes("trump")){
             return  "Orange Man Bad";
@@ -26,7 +28,7 @@ module.exports = {
             
         }
         else if (message == "status"){
-            return "I'm ok!"
+            return Math.random();
         }
         else{
             return null;
