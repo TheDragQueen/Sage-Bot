@@ -4,7 +4,11 @@ module.exports = {
             return  "ℂ𝕊?";
         }
         else if (message.toLowerCase().includes("garf")){
-            return "https://www.youtube.com/watch?v=OGbhJjXl9Rk";
+            var randomNumber = Math.random();
+            if ((randomNumber % 2) == 0){
+                return "https://www.youtube.com/watch?v=OGbhJjXl9Rk";
+            }
+            return "https://www.youtube.com/watch?v=agPj0S4weDo";
         }
         else if (message.toLowerCase().includes("trump")){
             return  "Orange Man Bad";
@@ -20,6 +24,9 @@ module.exports = {
         else if (message == "!gibs milkies"){
             return "m-mommy";
             
+        }
+        else if (message == "status"){
+            return "I'm ok!"
         }
         else{
             return null;
