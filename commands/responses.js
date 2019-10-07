@@ -1,3 +1,4 @@
+const Discord = require('discord.js');
 module.exports = {
     response: function(message){
         if (message.toLowerCase().includes("cs")){
@@ -30,8 +31,12 @@ module.exports = {
         else if (message == "status"){
             return (((Math.ceil(Math.random()*10) % 2)) == 1);
         }
-        else if (message == "keikaku"){
+        else if (message.toLowerCase().includes("keikaku")){
             return "Translator's Note: Keikaku means plan";
+        }
+        else if (message.toLowerCase().includes("dab")){
+            var answer = new Discord.Attachment('https://i.imgur.com/dQrv8FF.png', "dab");
+            return answer;
         }
         else{
             return null;
