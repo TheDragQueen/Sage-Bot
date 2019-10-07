@@ -9,6 +9,9 @@ client.on('ready', () => {
 
  
 client.on('message', message => {
+    if (message.content == "dab"){
+        message.channel.send("dab", { files: ["./resources/dab.png"] });
+    }
     var response = responses.response(message.content);
     if (response != null){
         message.channel.send(response);
