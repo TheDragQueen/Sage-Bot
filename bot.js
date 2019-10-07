@@ -1,4 +1,4 @@
-const Discord = require('discord.js');
+const {Discord, Attachment}= require('discord.js');
 const responses = require('./commands/responses.js');
 const client = new Discord.Client();
 
@@ -9,12 +9,10 @@ client.on('ready', () => {
 
  
 client.on('message', message => {
-    if (message.content == "dab"){
-        var dab = new Attachment("https://i.imgur.com/dQrv8FF.png");
-        var response = dab;
-    }
-    else{
-        var response = responses.response(message.content);
+    var response = responses.response(message.content);
+    if (message.content === 'dab') {
+        const attachment = new Attachment('https://i.imgur.com/dQrv8FF.png');
+        response = attachment;
     }
     if (response != null){
         message.channel.send(response);
