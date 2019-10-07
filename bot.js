@@ -10,7 +10,7 @@ client.on('ready', () => {
  
 client.on('message', message => {
     if (message.content == "dab"){
-        message.channel.send(":DAB:", { files: ["./resources/dab2.png"] });
+        message.channel.send(":DAB:", { files: ["./resources/dab.PNG"] });
     }
     var response = responses.response(message.content);
     if (response != null){
