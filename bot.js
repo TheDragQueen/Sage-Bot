@@ -11,7 +11,7 @@ client.on('ready', () => {
 client.on('message', message => {
     var response = responses.response(message.content);
     if (response != null){
-        message.reply(response);
+        message.channel.send(response);
     }
 
 });
