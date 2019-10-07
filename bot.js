@@ -9,13 +9,13 @@ client.on('ready', () => {
 
  
 client.on('message', message => {
-    var response = responses.response(message.content);
-    if (response == "dab"){
-        message.channel.send("dab", {
-            file: "https://i.imgur.com/dQrv8FF.png" // Or replace with FileOptions object
-        });
+    if (message.content == "dab"){
+        var dab = new Attachment("https://i.imgur.com/dQrv8FF.png");
+        var response = dab;
     }
-
+    else{
+        var response = responses.response(message.content);
+    }
     if (response != null){
         message.channel.send(response);
     }
