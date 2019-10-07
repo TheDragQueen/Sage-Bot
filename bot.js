@@ -4,18 +4,12 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log('I am ready!');
-    client.user.setPresence({ game: { name: 'Wrangling', type: 0 } });
+    client.user.setPresence({ game: { name: 'Lian: Type !gibs', type: 0 } });
 });
 
  
 client.on('message', message => {
-    if (message.content === 'dab') {
-        const attachment = new Discord.Attachment('https://i.imgur.com/w3duR07.png');
-        message.channel.send(`${message.author},`, attachment);
-    }
-    else{
-        var response = responses.response(message.content);
-    }
+    var response = responses.response(message.content);
     if (response != null){
         message.channel.send(response);
     }
