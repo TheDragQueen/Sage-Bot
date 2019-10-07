@@ -30,6 +30,9 @@ module.exports = {
         else if (message == "status"){
             return (((Math.ceil(Math.random()*10) % 2)) == 1);
         }
+        else if (message == "keikaku"){
+            return "Translator's Note: Keikaku means plan";
+        }
         else{
             return null;
         }
